@@ -1,0 +1,128 @@
+object FrameTable3: TFrameTable3
+  Align = Client
+  Size.Width = 506.000000000000000000
+  Size.Height = 432.000000000000000000
+  Size.PlatformDefault = False
+  object ListView1: TListView
+    StyleName = 'Default'
+    ItemAppearanceClassName = 'TDynamicAppearance'
+    ItemEditAppearanceClassName = 'TDynamicAppearance'
+    HeaderAppearanceClassName = 'TListHeaderObjects'
+    FooterAppearanceClassName = 'TListHeaderObjects'
+    AllowSelection = False
+    AlternatingColors = True
+    Align = Client
+    Margins.Top = 6.000000000000000000
+    Margins.Right = 6.000000000000000000
+    Margins.Bottom = 6.000000000000000000
+    Size.Width = 495.000000000000000000
+    Size.Height = 389.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    ParentShowHint = False
+    ShowHint = True
+    ItemAppearance.ItemHeight = 64
+    ItemAppearance.ItemEditHeight = 68
+    ItemAppearanceObjects.ItemObjects.ObjectsCollection = <
+      item
+        AppearanceObjectName = 'ZNACKA'
+        AppearanceClassName = 'TTextObjectAppearance'
+        Appearance.Font.Size = 18.000000000000000000
+        Appearance.Font.StyleExt = {00070000000000000004000000}
+        Appearance.TextAlign = Leading
+        Appearance.Width = 209.000000000000000000
+        Appearance.Height = 25.000000000000000000
+        Appearance.PlaceOffset.X = 78.000000000000000000
+        Appearance.PlaceOffset.Y = 12.000000000000000000
+      end
+      item
+        AppearanceObjectName = 'MODEL'
+        AppearanceClassName = 'TTextObjectAppearance'
+        Appearance.Font.Size = 16.000000000000000000
+        Appearance.TextAlign = Leading
+        Appearance.TextVertAlign = Trailing
+        Appearance.Width = 209.000000000000000000
+        Appearance.Height = 25.000000000000000000
+        Appearance.PlaceOffset.X = 78.000000000000000000
+        Appearance.PlaceOffset.Y = 34.000000000000000000
+      end
+      item
+        AppearanceObjectName = 'FOTKA'
+        AppearanceClassName = 'TImageObjectAppearance'
+        Appearance.Width = 71.000000000000000000
+        Appearance.Height = 64.000000000000000000
+      end
+      item
+        AppearanceObjectName = 'ButtonDetail'
+        AppearanceClassName = 'TAccessoryObjectAppearance'
+        Appearance.Width = 58.000000000000000000
+        Appearance.Height = 64.000000000000000000
+        Appearance.Align = Trailing
+        Appearance.PlaceOffset.X = 2.000000000000000000
+      end>
+    ItemAppearanceObjects.ItemEditObjects.ObjectsCollection = <>
+    StyleLookup = 'listviewstyle'
+    OnItemClickEx = ListView1ItemClickEx
+  end
+  object Splitter3D1: TSplitter3D
+    Align = Left
+    Cursor = crHSplit
+    Height = 401.000000000000000000
+    Position.X = 2.000000000000000000
+    Position.Y = 231.000000000000000000
+    Projection = Screen
+    Width = 5.000000000000000000
+  end
+  object BindNavigator1: TBindNavigator
+    Align = MostTop
+    Margins.Left = 6.000000000000000000
+    Margins.Top = 6.000000000000000000
+    Margins.Right = 6.000000000000000000
+    Position.X = 6.000000000000000000
+    Position.Y = 6.000000000000000000
+    Size.Width = 494.000000000000000000
+    Size.Height = 25.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    OnClick = BindNavigator1Click
+    DataSource = BindSourceDB1
+    VisibleButtons = [nbFirst, nbPrior, nbNext, nbLast, nbInsert, nbDelete, nbEdit]
+    xRadius = 4.000000000000000000
+    yRadius = 4.000000000000000000
+  end
+  object BindSourceDB1: TBindSourceDB
+    DataSet = DM.FDQueryMain
+    ScopeMappings = <>
+    Left = 240
+    Top = 200
+  end
+  object BindingsList1: TBindingsList
+    Methods = <>
+    OutputConverters = <>
+    Left = 20
+    Top = 5
+    object LinkFillControlToField1: TLinkFillControlToField
+      Category = 'Quick Bindings'
+      Control = ListView1
+      Track = True
+      FillDataSource = BindSourceDB1
+      FillDisplayFieldName = 'VIN'
+      AutoFill = True
+      FillExpressions = <
+        item
+          SourceMemberName = 'ZNACKA'
+          ControlMemberName = 'ZNACKA'
+        end
+        item
+          SourceMemberName = 'MODEL'
+          ControlMemberName = 'MODEL'
+        end
+        item
+          SourceMemberName = 'FOTKA'
+          ControlMemberName = 'FOTKA'
+        end>
+      FillHeaderExpressions = <>
+      FillBreakGroups = <>
+    end
+  end
+end

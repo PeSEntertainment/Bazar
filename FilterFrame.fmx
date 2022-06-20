@@ -1,0 +1,345 @@
+object FrameFilter: TFrameFilter
+  Align = Client
+  Size.Width = 381.000000000000000000
+  Size.Height = 402.000000000000000000
+  Size.PlatformDefault = False
+  object Layout3: TLayout
+    Position.X = 48.000000000000000000
+    Position.Y = 149.000000000000000000
+    Size.Width = 169.000000000000000000
+    Size.Height = 33.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 22
+    object CircleColor: TCircle
+      Align = Left
+      Fill.Color = claSlategray
+      Margins.Left = 6.000000000000000000
+      Margins.Top = 3.000000000000000000
+      Margins.Bottom = 3.000000000000000000
+      Position.X = 6.000000000000000000
+      Position.Y = 3.000000000000000000
+      Size.Width = 35.000000000000000000
+      Size.Height = 27.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Kind = None
+      Stroke.Thickness = 2.000000000000000000
+      OnClick = CircleColorClick
+    end
+    object BARVA: TLabel
+      Align = Left
+      HitTest = True
+      Position.X = 41.000000000000000000
+      Size.Width = 89.000000000000000000
+      Size.Height = 33.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'BARVA'
+      TabOrder = 2
+      OnClick = BARVAClick
+    end
+  end
+  object MODEL: TLabel
+    StyledSettings = [Family, FontColor]
+    HitTest = True
+    Margins.Bottom = 3.000000000000000000
+    Position.X = 48.000000000000000000
+    Position.Y = 114.000000000000000000
+    Size.Width = 169.000000000000000000
+    Size.Height = 25.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 16.000000000000000000
+    TextSettings.Font.StyleExt = {00070000000000000004000000}
+    Text = 'MODEL'
+    TabOrder = 3
+  end
+  object ZNACKA: TLabel
+    StyledSettings = [Family, FontColor]
+    HitTest = True
+    Margins.Top = 3.000000000000000000
+    Position.X = 48.000000000000000000
+    Position.Y = 75.000000000000000000
+    Size.Width = 121.000000000000000000
+    Size.Height = 25.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 18.000000000000000000
+    TextSettings.Font.StyleExt = {00070000000000000004000000}
+    Text = 'ZNACKA'
+    TabOrder = 1
+    OnClick = ZNACKAClick
+  end
+  object CheckBoxZNACKA: TCheckBox
+    Position.X = 19.000000000000000000
+    Position.Y = 78.000000000000000000
+    Size.Width = 21.000000000000000000
+    Size.Height = 19.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    OnChange = CheckBoxesChange
+  end
+  object CheckBoxMODEL: TCheckBox
+    Position.X = 19.000000000000000000
+    Position.Y = 117.000000000000000000
+    Size.Width = 21.000000000000000000
+    Size.Height = 19.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    OnChange = CheckBoxesChange
+  end
+  object CheckBoxBARVA: TCheckBox
+    Position.X = 19.000000000000000000
+    Position.Y = 156.000000000000000000
+    Size.Width = 29.000000000000000000
+    Size.Height = 19.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 4
+    OnChange = CheckBoxesChange
+  end
+  object CheckBoxCENA: TCheckBox
+    Position.X = 19.000000000000000000
+    Position.Y = 273.000000000000000000
+    Size.Width = 25.000000000000000000
+    Size.Height = 19.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 10
+    OnChange = CheckBoxesChange
+  end
+  object CheckBoxK_DISPOZICI: TCheckBox
+    Position.X = 19.000000000000000000
+    Position.Y = 195.000000000000000000
+    Size.Width = 25.000000000000000000
+    Size.Height = 19.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 5
+    OnChange = CheckBoxesChange
+  end
+  object CheckBoxNAJETO: TCheckBox
+    Position.X = 19.000000000000000000
+    Position.Y = 312.000000000000000000
+    Size.Width = 25.000000000000000000
+    Size.Height = 19.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 13
+    OnChange = CheckBoxesChange
+  end
+  object CheckBoxROK: TCheckBox
+    Position.X = 19.000000000000000000
+    Position.Y = 234.000000000000000000
+    Size.Width = 25.000000000000000000
+    Size.Height = 19.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 7
+    OnChange = CheckBoxesChange
+  end
+  object CheckBoxRZ: TCheckBox
+    Position.X = 19.000000000000000000
+    Position.Y = 352.000000000000000000
+    Size.Width = 25.000000000000000000
+    Size.Height = 19.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 16
+    OnChange = CheckBoxesChange
+  end
+  object K_DISPOZICI: TCheckBox
+    Margins.Left = 6.000000000000000000
+    Margins.Top = 6.000000000000000000
+    Margins.Right = 6.000000000000000000
+    Margins.Bottom = 6.000000000000000000
+    Position.X = 48.000000000000000000
+    Position.Y = 191.000000000000000000
+    Size.Width = 145.000000000000000000
+    Size.Height = 27.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 6
+    Text = 'K DISPOZICI'
+  end
+  object CENAOD: TNumberBox
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 11
+    Cursor = crIBeam
+    Max = 999999999999.000100000000000000
+    TextSettings.HorzAlign = Center
+    Position.X = 104.000000000000000000
+    Position.Y = 271.000000000000000000
+    Size.Width = 80.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object NAJETOOD: TNumberBox
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 14
+    Cursor = crIBeam
+    Max = 9999999.000000000000000000
+    TextSettings.HorzAlign = Center
+    Position.X = 104.000000000000000000
+    Position.Y = 310.000000000000000000
+    Size.Width = 80.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object ROKDO: TNumberBox
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 9
+    Cursor = crIBeam
+    Min = 1889.000000000000000000
+    Max = 2022.000000000000000000
+    Value = 1889.000000000000000000
+    Position.X = 168.000000000000000000
+    Position.Y = 232.000000000000000000
+    Size.Width = 57.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object ROKOD: TNumberBox
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 8
+    Cursor = crIBeam
+    Min = 1889.000000000000000000
+    Max = 2022.000000000000000000
+    Value = 1889.000000000000000000
+    Position.X = 104.000000000000000000
+    Position.Y = 232.000000000000000000
+    Size.Width = 57.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object CENADO: TNumberBox
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 12
+    Cursor = crIBeam
+    Max = 999999999999.000100000000000000
+    TextSettings.HorzAlign = Center
+    Position.X = 192.000000000000000000
+    Position.Y = 271.000000000000000000
+    Size.Width = 80.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object NAJETODO: TNumberBox
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 15
+    Cursor = crIBeam
+    Max = 9999999.000000000000000000
+    TextSettings.HorzAlign = Center
+    Position.X = 192.000000000000000000
+    Position.Y = 310.000000000000000000
+    Size.Width = 80.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object RZ: TEdit
+    StyleName = 'iconbutton'
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 17
+    TextSettings.HorzAlign = Center
+    Position.X = 104.000000000000000000
+    Position.Y = 350.000000000000000000
+    Size.Width = 81.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    CharCase = ecUpperCase
+  end
+  object Layout1: TLayout
+    Align = Top
+    Size.Width = 381.000000000000000000
+    Size.Height = 36.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 24
+    object ButtonClear: TButton
+      Align = Center
+      Size.Width = 105.000000000000000000
+      Size.Height = 24.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      Text = 'Vyma'#382' hodnoty'
+      OnClick = ButtonClearClick
+    end
+    object ButtonOff: TButton
+      Align = Left
+      Margins.Left = 6.000000000000000000
+      Margins.Top = 6.000000000000000000
+      Margins.Right = 6.000000000000000000
+      Margins.Bottom = 6.000000000000000000
+      Position.X = 6.000000000000000000
+      Position.Y = 6.000000000000000000
+      Size.Width = 80.000000000000000000
+      Size.Height = 24.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 16
+      Text = 'Vypni filtr'
+      OnClick = ButtonOffClick
+    end
+    object ButtonOn: TButton
+      Align = Right
+      Margins.Left = 6.000000000000000000
+      Margins.Top = 6.000000000000000000
+      Margins.Right = 6.000000000000000000
+      Margins.Bottom = 6.000000000000000000
+      Position.X = 295.000000000000000000
+      Position.Y = 6.000000000000000000
+      Size.Width = 80.000000000000000000
+      Size.Height = 24.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 18
+      Text = 'Zapni filtr'
+      OnClick = ButtonOnClick
+    end
+  end
+  object LabelROK: TLabel
+    Position.X = 48.000000000000000000
+    Position.Y = 235.000000000000000000
+    Size.Width = 41.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.WordWrap = False
+    Text = 'ROK'
+    TabOrder = 21
+  end
+  object LabelCENA: TLabel
+    Margins.Right = 6.000000000000000000
+    Position.X = 48.000000000000000000
+    Position.Y = 270.000000000000000000
+    Size.Width = 37.000000000000000000
+    Size.Height = 25.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 10.000000000000000000
+    TextSettings.WordWrap = False
+    Text = 'CENA'
+    TabOrder = 20
+  end
+  object LabelNAJETO_KM: TLabel
+    Position.X = 48.000000000000000000
+    Position.Y = 309.000000000000000000
+    Size.Width = 57.000000000000000000
+    Size.Height = 25.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 10.000000000000000000
+    TextSettings.WordWrap = False
+    Text = 'NAJETO'
+    TabOrder = 19
+  end
+  object LabelRZ: TLabel
+    Margins.Right = 6.000000000000000000
+    Position.X = 48.000000000000000000
+    Position.Y = 349.000000000000000000
+    Size.Width = 49.000000000000000000
+    Size.Height = 25.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 10.000000000000000000
+    TextSettings.WordWrap = False
+    Text = 'RZ'
+    TabOrder = 18
+  end
+  object NumRec: TLabel
+    Position.X = 48.000000000000000000
+    Position.Y = 48.000000000000000000
+    Size.Width = 72.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    Text = '1000'
+    TabOrder = 26
+  end
+  object FDQuery: TFDQuery
+    Connection = DM.FDConnection
+    Left = 240
+    Top = 152
+  end
+end

@@ -1,0 +1,48 @@
+inherited Bazar_SmXhdpiPh: TBazar_SmXhdpiPh
+  ClientHeight = 375
+  ClientWidth = 250
+  Touch.InteractiveGestures = [LongTap]
+  DesignerMasterStyle = 3
+  inherited Header: TToolBar
+    Size.Width = 250.000000000000000000
+    inherited Layout1: TLayout
+      Size.Width = 250.000000000000000000
+      inherited HEADERLABEL: TLabel
+        Size.Width = 250.000000000000000000
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+      end
+      inherited SUBLABEL: TLabel
+        Size.Width = 250.000000000000000000
+        TextSettings.Font.Size = 10.000000000000000000
+      end
+    end
+    inherited ButtonDetail: TButton
+      Position.X = 103.000000000000000000
+    end
+    inherited ButtonList: TButton
+      Position.X = 96.000000000000000000
+    end
+    inherited ButtonTable: TButton
+      Position.X = 144.000000000000000000
+    end
+    inherited Layout2: TLayout
+      Position.X = 183.000000000000000000
+      inherited RECORDS: TLabel
+        Margins.Right = 6.000000000000000000
+        Size.Width = 52.000000000000000000
+      end
+    end
+    inherited ButtonFilter: TButton
+      Position.X = 151.000000000000000000
+    end
+  end
+  inherited Panel: TPanel
+    Size.Width = 250.000000000000000000
+    Size.Height = 327.000000000000000000
+  end
+  inherited StyleBook1: TStyleBook
+    Styles = <
+      item
+      end>
+  end
+end

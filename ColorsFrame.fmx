@@ -1,0 +1,86 @@
+object FrameColors: TFrameColors
+  Align = Client
+  Size.Width = 350.000000000000000000
+  Size.Height = 489.000000000000000000
+  Size.PlatformDefault = False
+  object ListBox1: TListBox
+    Align = Client
+    Margins.Left = 6.000000000000000000
+    Margins.Top = 6.000000000000000000
+    Margins.Right = 6.000000000000000000
+    Margins.Bottom = 6.000000000000000000
+    Size.Width = 338.000000000000000000
+    Size.Height = 439.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 7
+    OnClick = ListBox1Click
+    DisableFocusEffect = True
+    DefaultItemStyles.ItemStyle = ''
+    DefaultItemStyles.GroupHeaderStyle = ''
+    DefaultItemStyles.GroupFooterStyle = ''
+    Viewport.Width = 334.000000000000000000
+    Viewport.Height = 435.000000000000000000
+  end
+  object Layout2: TLayout
+    Align = Top
+    Margins.Left = 6.000000000000000000
+    Margins.Top = 6.000000000000000000
+    Margins.Right = 6.000000000000000000
+    Position.X = 6.000000000000000000
+    Position.Y = 6.000000000000000000
+    Size.Width = 338.000000000000000000
+    Size.Height = 32.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 11
+    object btnAdd: TButton
+      Align = MostRight
+      ImageIndex = 8
+      Margins.Left = 6.000000000000000000
+      Position.X = 305.000000000000000000
+      Size.Width = 33.000000000000000000
+      Size.Height = 32.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'additembutton'
+      TabOrder = 0
+      Visible = False
+      OnClick = btnAddClick
+    end
+    object ComboColorBox1: TComboColorBox
+      Align = Left
+      Color = claWhite
+      Size.Width = 96.000000000000000000
+      Size.Height = 32.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      OnChange = ComboColorBox1Change
+    end
+    object eColorName: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      Align = Client
+      TabOrder = 3
+      Margins.Left = 6.000000000000000000
+      Size.Width = 178.000000000000000000
+      Size.Height = 32.000000000000000000
+      Size.PlatformDefault = False
+      TextPrompt = 'New color name'
+      OnChangeTracking = eColorNameChangeTracking
+    end
+    object btnSelect: TButton
+      Align = Right
+      Margins.Left = 6.000000000000000000
+      Position.X = 286.000000000000000000
+      Size.Width = 52.000000000000000000
+      Size.Height = 32.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 2
+      Text = 'OK'
+      OnClick = btnSelectClick
+    end
+  end
+  object FDTableColors: TFDTable
+    Connection = DM.FDConnection
+    TableName = 'COLORS'
+    Left = 214
+    Top = 319
+  end
+end

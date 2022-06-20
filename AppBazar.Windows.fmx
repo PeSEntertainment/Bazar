@@ -1,0 +1,10 @@
+inherited Bazar_Windows: TBazar_Windows
+  DesignerMasterStyle = 3
+  inherited Header: TToolBar
+    inherited Layout1: TLayout
+      inherited HEADERLABEL: TLabel
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+      end
+    end
+  end
+end

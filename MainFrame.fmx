@@ -1,0 +1,78 @@
+object FrameMain: TFrameMain
+  Align = Client
+  Size.Width = 320.000000000000000000
+  Size.Height = 409.000000000000000000
+  Size.PlatformDefault = False
+  object ButtonTabulka: TButton
+    Align = Horizontal
+    Margins.Left = 6.000000000000000000
+    Margins.Right = 6.000000000000000000
+    Position.X = 6.000000000000000000
+    Position.Y = 40.000000000000000000
+    Size.Width = 308.000000000000000000
+    Size.Height = 32.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 5
+    Text = 'Tabulka'
+  end
+  object ButtonList: TButton
+    Align = Horizontal
+    Margins.Left = 6.000000000000000000
+    Margins.Right = 6.000000000000000000
+    Position.X = 6.000000000000000000
+    Position.Y = 80.000000000000000000
+    Size.Width = 308.000000000000000000
+    Size.Height = 32.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 4
+    Text = 'List'
+  end
+  object ButtonZnacky: TButton
+    Align = Horizontal
+    Margins.Left = 6.000000000000000000
+    Margins.Right = 6.000000000000000000
+    Position.X = 6.000000000000000000
+    Position.Y = 184.000000000000000000
+    Size.Width = 308.000000000000000000
+    Size.Height = 32.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 3
+    Text = 'Zna'#269'ky a modely'
+  end
+  object ButtonBarvy: TButton
+    Align = Horizontal
+    Margins.Left = 6.000000000000000000
+    Margins.Right = 6.000000000000000000
+    Position.X = 6.000000000000000000
+    Position.Y = 224.000000000000000000
+    Size.Width = 308.000000000000000000
+    Size.Height = 32.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    Text = 'Barvy'
+  end
+  object ButtonDetail: TButton
+    Align = Horizontal
+    Margins.Left = 6.000000000000000000
+    Margins.Right = 6.000000000000000000
+    Position.X = 6.000000000000000000
+    Position.Y = 120.000000000000000000
+    Size.Width = 308.000000000000000000
+    Size.Height = 32.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    Text = 'Detail'
+  end
+  object ButtonNastaveni: TButton
+    Align = Horizontal
+    Margins.Left = 6.000000000000000000
+    Margins.Right = 6.000000000000000000
+    Position.X = 6.000000000000000000
+    Position.Y = 296.000000000000000000
+    Size.Width = 308.000000000000000000
+    Size.Height = 32.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    Text = 'Nastaven'#237' datab'#225'ze'
+  end
+end

@@ -1,0 +1,121 @@
+object FrameTable2: TFrameTable2
+  Touch.InteractiveGestures = [LongTap]
+  Align = Client
+  Size.Width = 749.000000000000000000
+  Size.Height = 449.000000000000000000
+  Size.PlatformDefault = False
+  object PopupMenu1: TPopupMenu
+    Left = 48
+    Top = 240
+    object MenuItemSome: TMenuItem
+      Text = 'SomePopup'
+    end
+  end
+  object StringGridBindSourceDB1: TStringGrid
+    Align = Client
+    CanFocus = True
+    ClipChildren = True
+    Margins.Left = 6.000000000000000000
+    Margins.Top = 6.000000000000000000
+    Margins.Right = 6.000000000000000000
+    Margins.Bottom = 6.000000000000000000
+    Size.Width = 737.000000000000000000
+    Size.Height = 404.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 12
+    RowCount = 0
+    Options = [AlternatingRowBackground, Editing, ColumnResize, ColumnMove, ColLines, RowLines, AlwaysShowSelection, Tabs, Header, HeaderClick, AutoDisplacement]
+    OnHeaderClick = StringGridBindSourceDB1HeaderClick
+    OnCellClick = StringGridBindSourceDB1CellClick
+    Viewport.Width = 733.000000000000000000
+    Viewport.Height = 379.000000000000000000
+  end
+  object Layout1: TLayout
+    Align = MostTop
+    Size.Width = 749.000000000000000000
+    Size.Height = 33.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 17
+    object BindNavigator1: TBindNavigator
+      Align = Client
+      Margins.Left = 6.000000000000000000
+      Margins.Top = 6.000000000000000000
+      Margins.Right = 6.000000000000000000
+      Size.Width = 737.000000000000000000
+      Size.Height = 27.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      OnClick = BindNavigator1Click
+      DataSource = BindSourceDB1
+      VisibleButtons = [nbFirst, nbPrior, nbNext, nbLast, nbInsert, nbDelete, nbEdit]
+      xRadius = 4.000000000000000000
+      yRadius = 4.000000000000000000
+    end
+  end
+  object BindSourceDB1: TBindSourceDB
+    DataSet = DM.FDQueryMain
+    ScopeMappings = <>
+    Left = 360
+    Top = 208
+  end
+  object BindingsList1: TBindingsList
+    Methods = <>
+    OutputConverters = <>
+    Left = 20
+    Top = 5
+    object LinkGridToDataSourceBindSourceDB1: TLinkGridToDataSource
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB1
+      GridControl = StringGridBindSourceDB1
+      Columns = <
+        item
+          MemberName = 'K_DISPOZICI'
+          Width = 24
+          CustomFormat = 'ToStr(%s)<>'#39'0'#39
+          CustomParse = 'IfThen(ToStr(%s)='#39'True'#39',1,0)'
+          ColumnStyle = 'CheckColumn'
+          DecimalDigits = 0
+        end
+        item
+          MemberName = 'ZNACKA'
+          Width = 86
+        end
+        item
+          MemberName = 'MODEL'
+          Width = 86
+        end
+        item
+          MemberName = 'CENA'
+          DecimalDigits = 0
+          Alignment = taCenter
+        end
+        item
+          MemberName = 'ROK'
+          Width = 48
+          DecimalDigits = 0
+          Alignment = taCenter
+        end
+        item
+          MemberName = 'MESIC'
+          Width = 42
+          Alignment = taCenter
+        end
+        item
+          MemberName = 'NAJETO'
+          Alignment = taCenter
+        end
+        item
+          MemberName = 'BARVA'
+          Width = 96
+        end
+        item
+          MemberName = 'RZ'
+        end
+        item
+          MemberName = 'VIN'
+          ReadOnly = True
+          Width = 128
+        end>
+    end
+  end
+end
